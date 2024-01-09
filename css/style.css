@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    cursor: url('../img/blueCur.cur'), auto;
+}
+
+p {
+    color: white;
+}
+
+.top {
+    background-color: #2196F3;
+    box-shadow: 0 0 5rem rgba(13, 71, 161);
+}
+
+.wrapper {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 0 0 60px;
+}
+
+.menu a:last-child {
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    text-shadow: 0 1px 40px rgba(13, 71, 161);
+    cursor: url('../img/blueCurHover.cur'), auto;
+}
+
+.dis a {
+    color: #BFC9CA;
+    text-decoration: line-through;
+}
+
+.menu h3 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.menuOpen {
+    position: fixed;
+    display: block;
+    top: 33px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    padding-top: 25vh;
+    margin: 0 10px 0;
+    background-color: #2196F3;
+}
+
+.menuOpen ul {
+    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuOpen a {
+    margin: 0;
+}
+
+.rel {
+    position: relative;
+    width: 20px;
+    height: 10px;
+}
+
+.span {
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    height: 3px;
+    top: 0;
+}
+
+.sp {
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    height: 3px;
+    bottom: 0;
+}
+
+.mainLog {
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo {
+    background-color: #2196F3;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    animation: transperent 1s ease-out forwards 2s;
+}
+
+@keyframes transperent {
+    to {
+        background-color: transparent;
+        display: none;
+    }
+}
+
+.rain {
+    position: absolute;
+    overflow: hidden;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 194px;
+    height: 194px;
+}
+
+.rainbow {
+    position: absolute;
+    top: 101%;
+    left: 50%;
+    border-radius: 50%;
+    border: 12px solid transparent;
+    transform: translate(-50%, -50%) rotate(-225deg);
+    box-sizing: border-box;
+    animation: rotate 2s ease-out forwards;
+}
+
+@keyframes rotate {
+    to {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+.red {
+    border-right-color: red;
+    border-top-color: red;
+    width: 194px;
+    height: 194px;
+    animation-delay: 0;
+}
+
+.orange {
+    border-right-color: orange;
+    border-top-color: orange;
+    width: 170px;
+    height: 170px;
+    animation-delay: 0.2s;
+}
+
+.yellow {
+    border-right-color: yellow;
+    border-top-color: yellow;
+    width: 146px;
+    height: 146px;
+    animation-delay: 0.4s;
+}
+
+.green {
+    border-right-color: lawngreen;
+    border-top-color: lawngreen;
+    width: 122px;
+    height: 122px;
+    animation-delay: 0.6s;
+}
+
+.cyan {
+    border-right-color: cyan;
+    border-top-color: cyan;
+    width: 98px;
+    height: 98px;
+    animation-delay: 0.8s;
+}
+
+.blue {
+    border-right-color: royalblue;
+    border-top-color: royalblue;
+    width: 74px;
+    height: 74px;
+    animation-delay: 1s;
+}
+
+.violet {
+    border-right-color: blueviolet;
+    border-top-color: blueviolet;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1.2s;
+}
+
+.tx {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 50%;
+    transform-origin: left center;
+    overflow: hidden;
+    animation: tx 2s ease-out forwards;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 200px;
+}
+
+.p,
+.p2 {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    top: calc(50% - 85px);
+    left: 50%;
+    opacity: 0;
+    white-space: nowrap;
+    transform-origin: left center;
+    animation: tx 5s ease-out forwards;
+    transform: translateX(-50%);
+}
+
+.p2 {
+    font-size: 20px;
+    top: calc(50% - 45px);
+}
+
+.mid {
+    color: #2196F3;
+}
+
+.mid p {
+    color: #2196F3;
+}
+
+.midwrap {
+    display: flex;
+    margin: 100px 100px;
+    margin-top: 86px;
+    padding: 15px;
+}
+
+.topmid {
+    margin-right: 150px;
+}
+
+.topmid h2 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.topmid h3 {
+    padding-bottom: 35px;
+}
+
+.topmid p {
+    padding-bottom: 10px;
+}
+
+.topmid p:last-child {
+    font-style: italic;
+}
+
+.topmid a {
+    color: #2196F3;
+}
+
+.topmid a:hover {
+    color: #fff;
+    text-shadow: 0 1px 10px rgba(13, 71, 161);
+    cursor: url('../img/blueCurHover.cur'), auto;
+}
+
+.navigation {
+    margin-left: 50px;
+}
+
+.bottom {
+    text-align: center;
+    background-color: #2196F3;
+    margin-top: 200px;
+    box-shadow: 0 0 5rem rgba(13, 71, 161);
+}
+
+.bottom p {
+    margin: 0;
+    color: #fff;
+    padding: 15px 0;
+}
+
+@keyframes tx {
+    to {
+        transform: translateX(-50%) rotate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        display: block;
+    }
+
+    .rel {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .menuOpen ul {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 22px;
+    }
+}
