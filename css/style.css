@@ -6,6 +6,18 @@ body {
     cursor: url('../img/blueCur.cur'), auto;
 }
 
+iframe {
+    width: 320px;
+    height: 320px;
+}
+
+@media screen and (min-width: 768px) {
+    iframe {
+        width: 700px;
+        height: 477px;
+    }
+}
+
 p {
     color: white;
 }
@@ -69,7 +81,7 @@ p {
 .menuOpen {
     position: fixed;
     display: block;
-    top: 33px;
+    top: 48px;
     left: -10px;
     width: 100%;
     height: 100%;
@@ -261,14 +273,35 @@ p {
 }
 
 .midwrap {
-    display: flex;
-    margin: 100px 100px;
-    margin-top: 86px;
-    padding: 15px;
+    display: block;
+    margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .midwrap {
+        display: flex;
+        margin-top: 86px;
+        padding: 15px;
+    }
+
+    .topmid {
+        margin-right: 150px;
+        padding-top: 0px;
+    }
+
+    .navigation {
+        margin-left: 50px;
+        text-align: right;
+    }
+
+    .presentation {
+        text-align: right;
+    }
 }
 
 .topmid {
-    margin-right: 150px;
+    padding: 35px 25px 0;
+    margin-right: 0;
 }
 
 .topmid h2 {
@@ -299,7 +332,8 @@ p {
 }
 
 .navigation {
-    margin-left: 50px;
+    margin-left: 0;
+    text-align: center;
 }
 
 .bottom {
@@ -313,6 +347,10 @@ p {
     margin: 0;
     color: #fff;
     padding: 15px 0;
+}
+
+.presentation {
+    text-align: center;
 }
 
 @keyframes tx {
@@ -342,5 +380,26 @@ p {
 @media screen and (min-width: 2560px) {
     html {
         font-size: 22px;
+    }
+
+    .wrapper {
+        max-width: 2400px;
+        margin: 0 auto;
+        padding: 0 15px 0;
+    }
+
+    iframe {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .topmid {
+        padding: 35px 60px 0;
+        margin-right: 0;
+    }
+
+    .presentation {
+        text-align: center;
+        margin-right: 40px;
     }
 }
