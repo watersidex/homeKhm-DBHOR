@@ -1,7 +1,6 @@
 body {
     margin: 0;
     height: 100vh;
-    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     cursor: url('../img/blueCur.cur'), auto;
 }
@@ -274,13 +273,12 @@ p {
 
 .midwrap {
     display: block;
-    margin: 0;
 }
 
 @media screen and (min-width: 1440px) {
     .midwrap {
         display: flex;
-        margin-top: 86px;
+        margin-top: 60px;
         padding: 15px;
     }
 
@@ -300,7 +298,9 @@ p {
 }
 
 .topmid {
-    padding: 35px 25px 0;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 25px;
     margin-right: 0;
 }
 
@@ -314,7 +314,7 @@ p {
 }
 
 .topmid p {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .topmid p:last-child {
@@ -336,17 +336,17 @@ p {
     text-align: center;
 }
 
-.bottom {
-    text-align: center;
+footer {
+    width: 100%;
     background-color: #2196F3;
-    margin-top: 200px;
     box-shadow: 0 0 5rem rgba(13, 71, 161);
 }
 
-.bottom p {
-    margin: 0;
+footer p {
+    text-align: center;
     color: #fff;
-    padding: 15px 0;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .presentation {
